@@ -3,7 +3,6 @@ local Array = require "../src/array"
 describe("Array", function()
 
     describe("#shift", function()
-        
         it("should remove the first element and return it alongside with the shifted array", function()
             local inputArray = { 1, 2, 3 }
             local expectedArray = { 2, 3 }
@@ -12,11 +11,9 @@ describe("Array", function()
             assert.are.same(expectedArray, shiftedArray)
             assert.are.equal(expectedElement, firstElement)
         end)
-    
     end)
 
     describe("#flatten", function()
-        
         it("should flatten the hierarchy", function()
             local inputArray = {
                 { 1, 2, 3 },
@@ -27,7 +24,6 @@ describe("Array", function()
             local flattenedArray = Array.flatten(inputArray)
             assert.are.same(expectedArray, flattenedArray)
         end)
-    
     end)
 
 end)

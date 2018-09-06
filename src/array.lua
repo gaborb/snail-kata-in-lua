@@ -19,7 +19,7 @@ function Array.flatten(array)
             else
                 table.insert(ret, v)
             end
-        end        
+        end
     end
     flatten(array)
     return ret

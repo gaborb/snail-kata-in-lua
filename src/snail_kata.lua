@@ -10,7 +10,7 @@ function SnailKata.traverse(matrix)
         table.insert(ret, row)
         if (#matrix > 0) then
             matrix = Matrix.rotate(matrix, -1)
-        end 
+        end
     end
     return Array.flatten(ret)
 end

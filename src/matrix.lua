@@ -46,8 +46,8 @@ function Matrix.shift(matrix)
 end
 
 function Matrix.rotate(matrix, delta)
-    local ret, delta = {}, delta or 1
-    if delta > 0 then
+    local ret
+    if delta == nil or delta > 0 then
         ret = Matrix.transpose(Matrix.reverse(matrix))
     else
         ret = Matrix.reverse(Matrix.transpose(matrix))
